@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gayatri Kalapahada | Java Backend Developer</title>
+    <meta name="description" content="Portfolio of Gayatri Kalapahada, seeking internship opportunities in backend development building scalable systems with clean and efficient code.">
+    
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Top Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#home">Gayatri.</a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Layout">
+                    <!-- Default to Dark Moon Icon since dark mode is base, assuming SVG will be swapped by JS -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                </button>
+            </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Abstract gradient backgrounds -->
+        <div class="hero-bg-shapes">
+            <div class="shape-1"></div>
+            <div class="shape-2"></div>
+        </div>
+        
+        <div class="container hero-content reveal">
+            <h2 class="hero-subtitle">Hello, I am</h2>
+            <h1 class="hero-title">
+                <span class="greeting-name">Gayatri Kalapahada</span>
+                <span class="typing-container">
+                    <span id="typing-text" class="typing-text"></span><span class="cursor"></span>
+                </span>
+            </h1>
+            <p class="hero-desc">
+                Building scalable backend systems with clean and efficient code. Seeking internship opportunities to contribute and grow in a fast-paced environment.
+            </p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="assets/Gayatri_Resume_new.pdf" target="_blank" class="btn btn-outline">View Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">About Me</h2>
+            <div class="glass about-card">
+                <div class="about-image">
+                    <!-- Image Placeholder generated via CSS ::before -->
+                </div>
+                <div class="about-text">
+                    <p>
+                        I am an enthusiastic and detail-oriented Java Backend Developer passionate about creating robust and high-performance server-side applications. 
+                        My focus lies precisely on architectural integrity, database management, and seamless API integration.
+                    </p>
+                    <p>
+                        Currently, I am actively seeking an internship opportunity where I can apply my knowledge of backend architectures, collaborate with a multidisciplinary team, and significantly contribute to meaningful software solutions.
+                    </p>
+                    <div class="highlights">
+                        <div class="highlight-item glass">
+                            <span class="highlight-title">Clean Code</span>
+                            <span>Scalable Architecture</span>
+                        </div>
+                        <div class="highlight-item glass">
+                            <span class="highlight-title">API Design</span>
+                            <span>RESTful Services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Technical Expertise</h2>
+            
+            <div class="skills-grid reveal">
+                <!-- Skill 1 -->
+                <div class="glass skill-card">
+                    <div class="skill-header">
+                        <span>Java</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-percentage="90"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="glass skill-card">
+                    <div class="skill-header">
+                        <span>Spring Boot</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-percentage="80"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="glass skill-card">
+                    <div class="skill-header">
+                        <span>Database Design (MySQL)</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-percentage="85"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="glass skill-card">
+                    <div class="skill-header">
+                        <span>RESTful APIs</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-percentage="90"></div>
+                    </div>
+                </div>
+                
+                <!-- Skill 5 -->
+                <div class="glass skill-card">
+                    <div class="skill-header">
+                        <span>Git & Version Control</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-percentage="80"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="glass project-card reveal">
+                    <div class="project-img">
+                        <span>Auth System</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">User Authentication System</h3>
+                        <p class="project-desc">
+                            A highly secure authentication provider backend featuring JWT generation, validation, and role-based access control leveraging Spring Security.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Spring Security</span>
+                            <span class="tag">JWT</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+                            <a href="#" class="btn btn-outline btn-sm">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass project-card reveal">
+                    <div class="project-img">
+                        <span>URL Shortener</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">URL Shortener Service</h3>
+                        <p class="project-desc">
+                            A high-throughput service that handles long URL ingestion and short link redirection, inclusive of a scalable click tracking metric system.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">REST API</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Base62</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+                            <a href="#" class="btn btn-outline btn-sm">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume / Contact Section Combined for Layout -->
+    <section id="contact" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-section">
+                <!-- Contact Info Area combined with Resume CTA -->
+                <div class="glass contact-info" id="resume">
+                    <h3>Let's Connect</h3>
+                    <p>
+                        I am open to discussing backend developer internship roles, technology discussions, or general inquiries. Reach out directly or drop a message using the form.
+                    </p>
+                    
+                    <a href="assets/Gayatri_Resume_new.pdf" target="_blank" class="btn btn-primary" style="margin-bottom: 40px; text-decoration: none; display: inline-block; width: fit-content;">
+                        View Formal Resume (PDF)
+                    </a>
+
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Github Profile">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn Profile">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="mailto:contact@example.com" class="social-icon" aria-label="Email Me">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="glass contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required aria-label="First Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email address" required aria-label="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell me about your opportunity or project..." required aria-label="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Gayatri Kalapahada. All Rights Reserved. Crafted with pristine architecture.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" aria-label="Scroll back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
